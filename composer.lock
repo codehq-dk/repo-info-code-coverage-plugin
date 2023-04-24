@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9236834a154b5f47fd4d40c0846f2ca4",
+    "content-hash": "6d1cd9a9dfdcacd55e93d76e39287955",
     "packages": [
         {
             "name": "codehq-dk/repo-info-contracts",
-            "version": "v0.0.1-alpha",
+            "version": "1.0.0-alpha2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/codehq-dk/repo-info-contracts.git",
-                "reference": "e24d15dc4601468fb47702f8625fe33be52bf53f"
+                "reference": "24b11385caf69707d97f699eb3973f8aad507c72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codehq-dk/repo-info-contracts/zipball/e24d15dc4601468fb47702f8625fe33be52bf53f",
-                "reference": "e24d15dc4601468fb47702f8625fe33be52bf53f",
+                "url": "https://api.github.com/repos/codehq-dk/repo-info-contracts/zipball/24b11385caf69707d97f699eb3973f8aad507c72",
+                "reference": "24b11385caf69707d97f699eb3973f8aad507c72",
                 "shasum": ""
             },
             "require": {
@@ -39,9 +39,9 @@
             "description": "Repository Information Contract. Depend on this module when creation new repository information factory plugins",
             "support": {
                 "issues": "https://github.com/codehq-dk/repo-info-contracts/issues",
-                "source": "https://github.com/codehq-dk/repo-info-contracts/tree/v0.0.1-alpha"
+                "source": "https://github.com/codehq-dk/repo-info-contracts/tree/1.0.0-alpha2"
             },
-            "time": "2023-02-19T20:41:48+00:00"
+            "time": "2023-03-24T17:07:46+00:00"
         },
         {
             "name": "nikic/php-parser",

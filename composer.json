@@ -5,7 +5,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=8.1",
-        "codehq-dk/repo-info-contracts": "v0.0.1-alpha",
+        "codehq-dk/repo-info-contracts": "1.0.0-alpha2",
         "phpunit/php-code-coverage": "9.*"
     },
     "autoload": {
