@@ -1,6 +1,6 @@
 # Release notes
 ( Repository Information Code Coverage plugin )
 
-## Version v0.0.1-alpha
+## Version 1.0.0-alpha1
 ### Feature
 * Added first Information Block - Code Coverage
