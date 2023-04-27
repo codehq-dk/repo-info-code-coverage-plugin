@@ -1,31 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1676844916">
-  <project timestamp="1676844916">
-    <file name="/home/jesper_privat/web-udvikling/repo-info-example-plugin/src/Factory/HelloWorldInformationFactory.php">
-      <class name="CodeHqDk\RepositoryInformation\Factory\HelloWorldInformationFactory" namespace="global">
-        <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="17" coveredelements="17"/>
+<coverage generated="1682603111">
+  <project timestamp="1682603111">
+    <file name="/Users/joej/Kodus2/repo-info-code-coverage-plugin/src/Factory/CodeCoverageInformationFactory.php">
+      <class name="CodeHqDk\RepositoryInformation\Factory\CodeCoverageInformationFactory" namespace="global">
+        <metrics complexity="11" methods="6" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="44" coveredstatements="29" elements="50" coveredelements="32"/>
       </class>
-      <line num="10" type="method" name="createBlocks" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="12" type="stmt" count="1"/>
-      <line num="13" type="stmt" count="1"/>
-      <line num="14" type="stmt" count="1"/>
-      <line num="15" type="stmt" count="1"/>
-      <line num="16" type="stmt" count="1"/>
-      <line num="17" type="stmt" count="1"/>
-      <line num="18" type="stmt" count="1"/>
-      <line num="19" type="stmt" count="1"/>
-      <line num="20" type="stmt" count="1"/>
-      <line num="21" type="stmt" count="1"/>
-      <line num="24" type="method" name="getRepositoryRequirements" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="26" type="stmt" count="1"/>
-      <line num="29" type="method" name="listAvailableInformationBlocks" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="31" type="stmt" count="1"/>
-      <line num="32" type="stmt" count="1"/>
+      <line num="20" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="3"/>
+      <line num="24" type="stmt" count="3"/>
+      <line num="25" type="stmt" count="2"/>
+      <line num="29" type="method" name="createBlocks" visibility="public" complexity="3" crap="3.33" count="1"/>
       <line num="33" type="stmt" count="1"/>
-      <metrics loc="35" ncloc="35" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="17" coveredelements="17"/>
+      <line num="34" type="stmt" count="0"/>
+      <line num="38" type="stmt" count="1"/>
+      <line num="39" type="stmt" count="0"/>
+      <line num="40" type="stmt" count="0"/>
+      <line num="41" type="stmt" count="0"/>
+      <line num="42" type="stmt" count="0"/>
+      <line num="43" type="stmt" count="0"/>
+      <line num="46" type="stmt" count="1"/>
+      <line num="47" type="stmt" count="1"/>
+      <line num="48" type="stmt" count="1"/>
+      <line num="49" type="stmt" count="1"/>
+      <line num="50" type="stmt" count="1"/>
+      <line num="51" type="stmt" count="1"/>
+      <line num="52" type="stmt" count="1"/>
+      <line num="53" type="stmt" count="1"/>
+      <line num="54" type="stmt" count="1"/>
+      <line num="55" type="stmt" count="1"/>
+      <line num="58" type="method" name="getRepositoryRequirements" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="60" type="stmt" count="1"/>
+      <line num="63" type="method" name="listAvailableInformationBlocks" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="65" type="stmt" count="1"/>
+      <line num="66" type="stmt" count="1"/>
+      <line num="67" type="stmt" count="1"/>
+      <line num="74" type="method" name="getCodeCoverage" visibility="public" complexity="3" crap="3.01" count="1"/>
+      <line num="76" type="stmt" count="1"/>
+      <line num="77" type="stmt" count="1"/>
+      <line num="78" type="stmt" count="1"/>
+      <line num="80" type="stmt" count="1"/>
+      <line num="81" type="stmt" count="0"/>
+      <line num="84" type="stmt" count="1"/>
+      <line num="86" type="stmt" count="1"/>
+      <line num="88" type="stmt" count="1"/>
+      <line num="90" type="stmt" count="1"/>
+      <line num="91" type="stmt" count="1"/>
+      <line num="92" type="stmt" count="1"/>
+      <line num="94" type="stmt" count="1"/>
+      <line num="97" type="method" name="buildNoCodeCoverageBlock" visibility="private" complexity="1" crap="2" count="0"/>
+      <line num="99" type="stmt" count="0"/>
+      <line num="100" type="stmt" count="0"/>
+      <line num="101" type="stmt" count="0"/>
+      <line num="102" type="stmt" count="0"/>
+      <line num="103" type="stmt" count="0"/>
+      <line num="104" type="stmt" count="0"/>
+      <line num="105" type="stmt" count="0"/>
+      <line num="106" type="stmt" count="0"/>
+      <metrics loc="109" ncloc="104" classes="1" methods="6" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="44" coveredstatements="29" elements="50" coveredelements="32"/>
     </file>
-    <file name="/home/jesper_privat/web-udvikling/repo-info-example-plugin/src/InformationBlocks/HelloWorldInformationBlock.php">
-      <class name="CodeHqDk\RepositoryInformation\InformationBlocks\HelloWorldInformationBlock" namespace="global">
+    <file name="/Users/joej/Kodus2/repo-info-code-coverage-plugin/src/InformationBlocks/CodeCoverageInformationBlock.php">
+      <class name="CodeHqDk\RepositoryInformation\InformationBlocks\CodeCoverageInformationBlock" namespace="global">
         <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="9" coveredelements="9"/>
       </class>
       <line num="9" type="method" name="fromArray" visibility="public" complexity="1" crap="1" count="1"/>
@@ -37,17 +70,17 @@
       <line num="15" type="stmt" count="1"/>
       <line num="16" type="stmt" count="1"/>
       <line num="17" type="stmt" count="1"/>
-      <metrics loc="19" ncloc="19" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="9" coveredelements="9"/>
+      <metrics loc="20" ncloc="20" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="9" coveredelements="9"/>
     </file>
-    <file name="/home/jesper_privat/web-udvikling/repo-info-example-plugin/src/Provider/HelloWorldInformationFactoryProvider.php">
-      <class name="CodeHqDk\RepositoryInformation\Provider\HelloWorldInformationFactoryProvider" namespace="global">
-        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+    <file name="/Users/joej/Kodus2/repo-info-code-coverage-plugin/src/Provider/CodeCoverageInformationFactoryProvider.php">
+      <class name="CodeHqDk\RepositoryInformation\Provider\CodeCoverageInformationFactoryProvider" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
       </class>
-      <line num="11" type="method" name="addFactory" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="13" type="stmt" count="1"/>
-      <line num="14" type="stmt" count="1"/>
-      <metrics loc="16" ncloc="16" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      <line num="11" type="method" name="addFactory" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="13" type="stmt" count="0"/>
+      <line num="14" type="stmt" count="0"/>
+      <metrics loc="17" ncloc="17" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
     </file>
-    <metrics files="3" loc="70" ncloc="70" classes="3" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="24" coveredstatements="24" elements="29" coveredelements="29"/>
+    <metrics files="3" loc="146" ncloc="141" classes="3" methods="8" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="54" coveredstatements="37" elements="62" coveredelements="41"/>
   </project>
 </coverage>

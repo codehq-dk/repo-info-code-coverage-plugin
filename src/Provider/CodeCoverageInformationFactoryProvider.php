@@ -1,6 +1,6 @@
 <?php
 
-namespace Provider;
+namespace CodeHqDk\RepositoryInformation\Provider;
 
 use CodeCoverageInformationFactory;
 use CodeHqDk\RepositoryInformation\Factory\InformationFactoryProvider;
