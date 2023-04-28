@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1682603111">
-  <project timestamp="1682603111">
+<coverage generated="1682672786">
+  <project timestamp="1682672786">
     <file name="/Users/joej/Kodus2/repo-info-code-coverage-plugin/src/Factory/CodeCoverageInformationFactory.php">
       <class name="CodeHqDk\RepositoryInformation\Factory\CodeCoverageInformationFactory" namespace="global">
         <metrics complexity="11" methods="6" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="44" coveredstatements="29" elements="50" coveredelements="32"/>

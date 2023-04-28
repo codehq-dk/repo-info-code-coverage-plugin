@@ -2,7 +2,7 @@
 
 namespace CodeHqDk\RepositoryInformation\Provider;
 
-use CodeCoverageInformationFactory;
+use CodeHqDk\RepositoryInformation\Factory\CodeCoverageInformationFactory;
 use CodeHqDk\RepositoryInformation\Factory\InformationFactoryProvider;
 use CodeHqDk\RepositoryInformation\Service\ProviderDependencyService;
 
