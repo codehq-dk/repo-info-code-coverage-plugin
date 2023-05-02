@@ -75,15 +75,15 @@ class CodeCoverageInformationFactory implements InformationFactory
     {
         $php = Environment::getPhpPath();
         $phpunit = $local_path_to_code . "/vendor/bin/phpunit";
-        $phpunit_config_file = $local_path_to_code . '/phpunit.xml'; // TODO - configurable ?
+        $path_to_test_code = $local_path_to_code . '/tests';
 
-        if (!file_exists($phpunit) || !file_exists($phpunit_config_file)) {
-            throw new RepositoryInformationException('Cannot build code coverage information - .../bin/phpunit or phpunit.xml is missing');
+        if (!file_exists($phpunit) || !file_exists($path_to_test_code)) {
+            throw new RepositoryInformationException('Cannot build code coverage information - .../bin/phpunit or /tests is missing');
         }
 
         $output_path = $this->code_coverage_output_path . "/code_coverage_report.txt";
 
-        $command_to_run = "{$php} {$phpunit} {$local_path_to_code}/tests --coverage-text={$output_path} --configuration {$phpunit_config_file}";
+        $command_to_run = "{$php} {$phpunit} {$path_to_test_code} --coverage-text={$output_path}";
 
         Bash::runCommand($command_to_run);
 

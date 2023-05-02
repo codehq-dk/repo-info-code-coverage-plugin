@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1682672786">
-  <project timestamp="1682672786">
+<coverage generated="1683033926">
+  <project timestamp="1683033926">
     <file name="/Users/joej/Kodus2/repo-info-code-coverage-plugin/src/Factory/CodeCoverageInformationFactory.php">
       <class name="CodeHqDk\RepositoryInformation\Factory\CodeCoverageInformationFactory" namespace="global">
         <metrics complexity="11" methods="6" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="44" coveredstatements="29" elements="50" coveredelements="32"/>
@@ -55,7 +55,7 @@
       <line num="104" type="stmt" count="0"/>
       <line num="105" type="stmt" count="0"/>
       <line num="106" type="stmt" count="0"/>
-      <metrics loc="109" ncloc="104" classes="1" methods="6" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="44" coveredstatements="29" elements="50" coveredelements="32"/>
+      <metrics loc="109" ncloc="105" classes="1" methods="6" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="44" coveredstatements="29" elements="50" coveredelements="32"/>
     </file>
     <file name="/Users/joej/Kodus2/repo-info-code-coverage-plugin/src/InformationBlocks/CodeCoverageInformationBlock.php">
       <class name="CodeHqDk\RepositoryInformation\InformationBlocks\CodeCoverageInformationBlock" namespace="global">
@@ -81,6 +81,6 @@
       <line num="14" type="stmt" count="0"/>
       <metrics loc="17" ncloc="17" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
     </file>
-    <metrics files="3" loc="146" ncloc="141" classes="3" methods="8" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="54" coveredstatements="37" elements="62" coveredelements="41"/>
+    <metrics files="3" loc="146" ncloc="142" classes="3" methods="8" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="54" coveredstatements="37" elements="62" coveredelements="41"/>
   </project>
 </coverage>
