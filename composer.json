@@ -11,12 +11,12 @@
     },
     "autoload": {
         "psr-4": {
-            "CodeHqDk\\RepositoryInformation\\": "src/"
+            "CodeHqDk\\RepositoryInformation\\CodeCoverage\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "CodeHqDk\\RepositoryInformation\\Tests\\": "tests/"
+            "CodeHqDk\\RepositoryInformation\\CodeCoverage\\Tests\\": "tests/"
         }
     },
     "require-dev": {
@@ -24,7 +24,7 @@
         "lcobucci/clock": "^3.0.0"
     },
     "scripts": {
-        "test": "vendor/bin/phpunit tests/Unit",
-        "test-report": "vendor/bin/phpunit tests/Unit --coverage-html tests/CoverageReport"
+        "test": "vendor/bin/phpunit tests/Unit --group whitelisted",
+        "test-report": "vendor/bin/phpunit tests/Unit  --group whitelisted --coverage-html tests/CoverageReport --coverage-filter tests/Unit --exclude tests/data"
     }
 }

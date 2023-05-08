@@ -1,6 +1,10 @@
 # Release notes
 ( Repository Information Code Coverage plugin )
 
+## Version 1.0.0-alpha4
+### Fixes
+* Updated usage of phpunit and changed namespace across the module
+
 ## Version 1.0.0-alpha3
 ### Fixes
 * Check if `tests` folder exists before running coverage check added

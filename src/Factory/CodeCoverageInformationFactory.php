@@ -1,13 +1,14 @@
 <?php
 
-namespace CodeHqDk\RepositoryInformation\Factory;
+namespace CodeHqDk\RepositoryInformation\CodeCoverage\Factory;
 
 use CodeHqDk\LinuxBashHelper\Bash;
 use CodeHqDk\LinuxBashHelper\Environment;
 use CodeHqDk\LinuxBashHelper\Exception\LinuxBashHelperException;
 use CodeHqDk\RepositoryInformation\Exception\RepositoryInformationException;
+use CodeHqDk\RepositoryInformation\Factory\InformationFactory;
 use CodeHqDk\RepositoryInformation\Model\RepositoryRequirements;
-use CodeHqDk\RepositoryInformation\InformationBlocks\CodeCoverageInformationBlock;
+use CodeHqDk\RepositoryInformation\CodeCoverage\InformationBlocks\CodeCoverageInformationBlock;
 use Lcobucci\Clock\Clock;
 use Lcobucci\Clock\SystemClock;
 
@@ -18,7 +19,7 @@ class CodeCoverageInformationFactory implements InformationFactory
     ];
 
     public function __construct(
-        private string $code_coverage_output_path = '/Users/joej/Kodus2/repo-info-code-coverage-plugin/tests/data',
+        private readonly string $code_coverage_output_path,
         private ?Clock $clock = null
     ) {
         if ($this->clock === null) {
@@ -82,8 +83,8 @@ class CodeCoverageInformationFactory implements InformationFactory
         }
 
         $output_path = $this->code_coverage_output_path . "/code_coverage_report.txt";
-
-        $command_to_run = "{$php} {$phpunit} {$path_to_test_code} --coverage-text={$output_path}";
+        $coverage_filter = ' --coverage-filter /Users/joej/Kodus2/repo-info-code-coverage-plugin/tests/data/repo-info-example-plugin/tests';
+        $command_to_run = "{$php} {$phpunit} {$path_to_test_code} --coverage-text={$output_path}" . $coverage_filter;
 
         Bash::runCommand($command_to_run);
 
@@ -101,7 +102,7 @@ class CodeCoverageInformationFactory implements InformationFactory
             'Code coverage',
             'No code coverage information available',
             $this->clock->now()->getTimestamp(),
-            'Cannot build code coverage information - .../bin/phpunit or phpunit.xml is missing',
+            'Cannot build code coverage information - .../bin/phpunit or /tests is missing',
             'This is information from the Code Coverage Information Factory',
         );
     }

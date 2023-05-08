@@ -2,9 +2,12 @@
 
 namespace CodeHqDk\RepositoryInformation\Tests\Unit\InformationBlock;
 
-use CodeHqDk\RepositoryInformation\InformationBlocks\CodeCoverageInformationBlock;
+use CodeHqDk\RepositoryInformation\CodeCoverage\InformationBlocks\CodeCoverageInformationBlock;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @group whitelisted
+ */
 class CodeCoverageInformationBlockTest extends TestCase
 {
     public function testConstructionAndGetters()

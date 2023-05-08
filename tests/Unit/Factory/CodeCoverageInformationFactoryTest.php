@@ -1,25 +1,35 @@
 <?php
 
-namespace CodeHqDk\RepositoryInformation\Tests\Unit\Factory;
+namespace CodeHqDk\RepositoryInformation\CodeCoverage\Tests\Unit\Factory;
 
-use CodeHqDk\RepositoryInformation\Factory\CodeCoverageInformationFactory;
-use CodeHqDk\RepositoryInformation\InformationBlocks\CodeCoverageInformationBlock;
+use CodeHqDk\RepositoryInformation\CodeCoverage\Factory\CodeCoverageInformationFactory;
+use CodeHqDk\RepositoryInformation\CodeCoverage\InformationBlocks\CodeCoverageInformationBlock;
 use CodeHqDk\RepositoryInformation\Model\RepositoryRequirements;
 use Lcobucci\Clock\FrozenClock;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @group whitelisted
+ */
 class CodeCoverageInformationFactoryTest extends TestCase
 {
+    private string $output_path;
+
+    protected function setup(): void
+    {
+        $this->output_path = dirname(__FILE__, 2) . '/data';
+    }
+
     public function testListAvailable(): void
     {
-        $factory = new CodeCoverageInformationFactory();
+        $factory = new CodeCoverageInformationFactory($this->output_path);
         $expected = [CodeCoverageInformationBlock::class];
         $this->assertEquals($expected, $factory->listAvailableInformationBlocks());
     }
 
     public function testGetRepositoryRequirements(): void
     {
-        $factory = new CodeCoverageInformationFactory();
+        $factory = new CodeCoverageInformationFactory($this->output_path);
         $this->assertInstanceOf(RepositoryRequirements::class, $factory->getRepositoryRequirements());
     }
 
@@ -34,9 +44,9 @@ class CodeCoverageInformationFactoryTest extends TestCase
             'Code Coverage information (using PhpUnit)',
             'Code coverage',
             'Summary:                
-  Classes: 66.67% (2/3)  
-  Methods: 80.00% (4/5)  
-  Lines:   96.15% (25/26)',
+  Classes: 75.00% (3/4)  
+  Methods: 88.89% (8/9)  
+  Lines:   98.04% (50/51)',
             time(),
             'Cannot build code coverage information - .../bin/phpunit or phpunit.xml is missing',
             'This is information from the Code Coverage Information Factory',
