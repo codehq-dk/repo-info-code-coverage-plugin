@@ -46,7 +46,7 @@ class CodeCoverageInformationFactoryTest extends TestCase
             'Summary:                
   Classes: 75.00% (3/4)  
   Methods: 88.89% (8/9)  
-  Lines:   98.04% (50/51)',
+  Lines:   92.59% (50/54)',
             time(),
             'Cannot build code coverage information - .../bin/phpunit or phpunit.xml is missing',
             'This is information from the Code Coverage Information Factory',

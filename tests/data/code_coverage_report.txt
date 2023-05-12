@@ -1,12 +1,12 @@
 
 
 Code Coverage Report:    
-  2023-05-12 15:18:45    
+  2023-05-12 16:14:34    
                          
  Summary:                
   Classes: 75.00% (3/4)  
   Methods: 88.89% (8/9)  
-  Lines:   98.04% (50/51)
+  Lines:   92.59% (50/54)
 
 CodeHqDk\RepositoryInformation\Tests\Mock\MockProvider
   Methods:  66.67% ( 2/ 3)   Lines:  66.67% (  2/  3)
