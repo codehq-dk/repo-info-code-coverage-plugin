@@ -83,7 +83,7 @@ class CodeCoverageInformationFactory implements InformationFactory
         }
 
         $output_path = $this->code_coverage_output_path . "/code_coverage_report.txt";
-        $coverage_filter = ' --coverage-filter /Users/joej/Kodus2/repo-info-code-coverage-plugin/tests/data/repo-info-example-plugin/tests';
+        $coverage_filter = " --coverage-filter {$path_to_test_code}";
         $command_to_run = "{$php} {$phpunit} {$path_to_test_code} --coverage-text={$output_path}" . $coverage_filter;
 
         Bash::runCommand($command_to_run);

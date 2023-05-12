@@ -1,6 +1,10 @@
 # Release notes
 ( Repository Information Code Coverage plugin )
 
+## Version 1.0.0-alpha5
+### Fixes
+* Fix hardcoded path in factory
+
 ## Version 1.0.0-alpha4
 ### Fixes
 * Updated usage of phpunit and changed namespace across the module
